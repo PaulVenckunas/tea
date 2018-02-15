@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+        <div class="info-line" id="info-line" >
+          <i class="fa fa-times" aria-hidden="true" onclick="myFunction()"></i>
+          <p>Livraison offerte a partir de 65Eur d'achat!</p>
+        </div>
+        <div class="container">
+
+          <div class="logo-cart">
+            <div>
+              <img src="img/logo.png" alt="">
+            </div>
+            <div class="flex">
+              <p>Mon panier<span>42.00€</span></p>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <nav>
+            <ul >
+              <li class="main-menu-item"><a href="#" onclick="activeLink(0)">thes</a></li>
+              <li class="main-menu-item"><a href="#" onclick="activeLink(1)">infusions</a></li>
+              <li class="main-menu-item"><a href="#" onclick="activeLink(2)">grands crus</a></li>
+              <li class="main-menu-item"><a href="#" onclick="activeLink(3)">accessoires</a></li>
+              <li class="main-menu-item"><a href="#" onclick="activeLink(4)">Epicerie</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="image-container">
+          <img src="img/the.jpg" alt="paveikslelis">
+          <div class="title-name">
+            <a href="#">
+              <h2>Le the, les bienfaits</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            </a>
+          </div>
+        </section>
+
+        <section class="image-container">
+          <h3>Choisissez votre the</h3>
+
+          <div class="cups">
+            <div>
+              <img class="cup-image" src="img/tea/1.jpg" alt="paveikslelis">
+              <h4>The noir</h4>
+            </div>
+            <div>
+              <img class="cup-image" src="img/tea/2.jpg" alt="paveikslelis">
+              <h4>the vert</h4>
+            </div>
+            <div>
+              <img class="cup-image" src="img/tea/3.jpg" alt="paveikslelis">
+              <h4>oolong</h4>
+            </div>
+            <div>
+              <img class="cup-image" src="img/tea/4.jpg" alt="paveikslelis">
+              <h4>the blanc</h4>
+            </div>
+            <div>
+              <img class="cup-image" src="img/tea/5.jpg" alt="paveikslelis">
+              <h4>rooibos</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="image-container-products">
+          <div class="product-container">
+
+            <div class="product">
+              <div class="margin">
+                <div class="title-bar">
+                  <h3 class="magenta">Nos nouvveautes</h3>
+                </div>
+              </div>
+              <img src="img/product1.jpg" alt="paveikslelis">
+            </div>
+
+            <div class="product">
+              <div class="margin">
+                <div class="title-bar">
+                  <h3 class="orange">Nos nouvveautes</h3>
+                </div>
+              </div>
+              <img src="img/product2.jpg" alt="paveikslelis">
+            </div>
+
+            <div class="product">
+              <div class="margin">
+                <div class="title-bar">
+                  <h3 class="cyan">Nos nouvveautes</h3>
+                </div>
+              </div>
+              <img src="img/product3.jpg" alt="paveikslelis">
+            </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+
+
+      <div class="footer-navigation-line">
+        <nav>
+          <ul>
+            <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>paiement securise</a></li>
+            <li><a href="#"><i class="fa fa-truck" aria-hidden="true"></i>ma livraison offerte</a></li>
+            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>carte de fidelite</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>service client</a></li>
+            <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>garantie qualite</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-navigation">
+        <nav>
+          <ul>
+            <li><a href="#">paiement securise</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      function myFunction(){
+        document.getElementById("info-line").style.height = "0px";
+      }
+      function activeLink(n){
+        let el=document.getElementsByClassName("main-menu-item");
+        for(var i=0;true;i++){
+          if(el[i]!==undefined){
+            el[i].classList.remove('active');
+          }else{
+            break;
+          }
+        }
+        el[n].classList.add('active');
+      }
+
+    </script>
+  </body>
+</html>
